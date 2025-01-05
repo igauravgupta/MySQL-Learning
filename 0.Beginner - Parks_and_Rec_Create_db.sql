@@ -1,11 +1,12 @@
 DROP DATABASE IF EXISTS `Parks_and_Recreation`;
+
 CREATE DATABASE `Parks_and_Recreation`;
+--CREATE DB
+
+CREATE DATABASE IF NOT EXISTS `Parks_and_Recreation`;
+-- CRAETE DB IF NOT EXISTS
+
 USE `Parks_and_Recreation`;
-
-
-
-
-
 
 CREATE TABLE employee_demographics (
   employee_id INT NOT NULL,
