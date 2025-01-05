@@ -48,8 +48,7 @@ FROM customers;
 
 #See how it's pretty easy to read and to see which columns we are using.
 
-#Math in SQL does follow PEMDAS which stands for Parenthesis, Exponent, Multiplication,
-#Division, Addition, subtraction - it's the order of operation for math
+
 
 #For example - What will the output be?:
 SELECT first_name, 
@@ -68,6 +67,8 @@ FROM employee_salary;
 
 
 # Pemdas
+#Math in SQL does follow PEMDAS which stands for Parenthesis, Exponent, Multiplication,
+#Division, Addition, subtraction - it's the order of operation for math
 
 #One thing I wanted to show you about the select statement in this lesson is the DISTINCT Statement - this will return only unique values in
 #The output - and you won't have any duplicates
