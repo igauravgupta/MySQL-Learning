@@ -57,6 +57,16 @@ FROM employee_demographics
 WHERE first_name LIKE 'a___%';
 
 
+# logical opertors
+# AND , OR, NOT 
+
+
+
+# PEMDAS ALSO WORKS IN WHERE Clause
+SELECT * FROM employee_demographics
+WHERE (first_name='Leslie' AND age=44) OR age>40;
+
+
 
 
 
