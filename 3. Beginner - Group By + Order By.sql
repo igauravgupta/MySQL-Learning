@@ -16,6 +16,7 @@ SELECT first_name
 FROM employee_demographics
 GROUP BY gender
 ;
+-- show error because first name is not in the group by
 
 
 
@@ -39,6 +40,7 @@ SELECT gender, AVG(age)
 FROM employee_demographics
 GROUP BY gender
 ;
+-- here we can see the average age of each gender will be in the output
 
 SELECT gender, MIN(age), MAX(age), COUNT(age),AVG(age)
 FROM employee_demographics
@@ -81,6 +83,13 @@ ORDER BY first_name DESC;
 SELECT *
 FROM employee_demographics
 ORDER BY gender, age;
+-- this orders by gender and then by age
+
+SELECT *
+FROM employee_demographics
+ORDER BY gender ,age DESC;
+-- this orders by gender and then by age ( only age in descending order)
+
 
 SELECT *
 FROM employee_demographics
