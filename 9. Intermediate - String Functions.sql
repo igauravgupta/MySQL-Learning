@@ -4,8 +4,9 @@ SELECT *
 FROM bakery.customers;
 
 
-#Length will give us the length of each value
+#Length will give us the length of each value (number of characters in a string)
 SELECT LENGTH('sky');
+-- output is 3
 
 #Now we can see the length of each name
 SELECT first_name, LENGTH(first_name) 
