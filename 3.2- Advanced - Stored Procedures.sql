@@ -80,8 +80,9 @@ BEGIN
 	FROM employee_salary
 	WHERE salary >= 50000;
 END $$
-
 DELIMITER ;
+
+---------------------------
 
 -- and changes it back at the end
 
@@ -101,7 +102,6 @@ CALL large_order_totals3();
 -- we can also add parameters
 USE `parks_and_recreation`;
 DROP procedure IF EXISTS `large_salaries3`;
--- it automatically adds the dilimiter for us
 DELIMITER $$
 CREATE PROCEDURE large_salaries3(employee_id_param INT)
 BEGIN
@@ -110,10 +110,7 @@ BEGIN
 	WHERE salary >= 60000
     AND employee_id_param = employee_id;
 END $$
-
 DELIMITER ;
-
-
 
 CALL large_salaries3(1);
 
